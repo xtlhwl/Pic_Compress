@@ -44,9 +44,9 @@ img.onload = function ()     {
     context.clearRect(0, 0, targetWidth, targetHeight);
     // 图片压缩
     context.drawImage(img, 0, 0, targetWidth, targetHeight);
-
+    //图片base64
     var DataUrl = canvas.toDataURL("image/png")
-    
+    //将图片base64转为图片地址
     document.getElementById('img').setAttribute( 'src',`${DataUrl}`);
    
 };
